@@ -49,6 +49,14 @@ body {
   line-height: 1.6;
 }
 
+.name:hover{
+  scale: 1.3;
+  background-color: #31465e;
+
+}
+.line:hover{
+  scale:1.1;
+}
 /* Section Headings */
 .section-heading {
   font-size: 26px;
@@ -94,6 +102,7 @@ body {
   width: 220px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  cursor:pointer;
 }
 .card img {
   width: 150px;
@@ -139,4 +148,9 @@ body {
 .skill:hover {
   transform: scale(1.2);
   background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+.link-1{
+  text-decoration: none;
+  color: white;
 }

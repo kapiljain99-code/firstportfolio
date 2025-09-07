@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="anyquries.css" rel="stylesheet">
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comment Box</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Comment Box</title>
+</head>
+<body>
+      <!-- <script>
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwwdDrwbA61CSP1tzfdti-hpRDeXpC3EfAJmGXAK3DGWi7AN9msaCO50L3wlHiaNeujig/exec"; // paste your script web app URL here
+
+    async function submitForm(event) {
+      event.preventDefault();
+      const form = document.getElementById('commentForm');
+      const full_name = form.full_name.value.trim();
+      const email = form.email.value.trim();
+      const comment = form.comment.value.trim();
+
+      // small client validation
+      if (!full_name || !email || !comment) {
+        alert("Please fill all fields.");
+        return;
+      }
+
+      const payload = { full_name, email, comment };
+
+      try {
+        const res = await fetch(WEB_APP_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await res.json();
+        console.log("Server response:", result);
+
+        if (result.status === "success") {
+          alert("✅ Comment submitted successfully!");
+          form.reset();
+        } else {
+          alert("❌ Server error: " + result.message);
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Network error. Check console for details.");
+      }
+    }
+
+    document.getElementById('commentForm').addEventListener('submit', submitForm);
+  </script> -->
+
+  
+  <div class="Comment-Box">
+    <h2>Comment</h2>
+    <form action="https://formspree.io/f/mqadwdqe" method="POST" id="commentForm">
+      <input type="text" name="full_name" placeholder="username" required>
+      <input type="email" name="email" placeholder="username@gmail.com" required>
+      <textarea name="comment" placeholder="Comment" required></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+
+
+</body>
+</html>
+
