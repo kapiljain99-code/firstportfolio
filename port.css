@@ -154,3 +154,15 @@ body {
   text-decoration: none;
   color: white;
 }
+.footer{
+  text-decoration: none;
+  font-family: arial;
+  font-weight: 100px;
+  font-size: larger;
+  transition: .15s color;
+}
+.footer:hover{
+  font-size: 25px;
+  color: rgb(15, 215, 189);
+  text-shadow: rgb(24, 24, 159);
+}
